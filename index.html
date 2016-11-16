@@ -22,112 +22,90 @@
     	    <div id="main">
     		    <div id="container">
     			    <div id="content" role="main">
+                        <header>
                         <h1>Order Form</h1>
-                        <fieldset>
-                            <legend>General Info</legend>
-                            <p class="question">   
-                                <label for="email">Email</label>
-                                <input class="input" type="email" name="email" size="30" id="email" placeholder="your@mail.com">
-                            </p>
+                        </header>
+                        <form>
+                            <fieldset>
+                                <legend>General Info</legend>
+                                    <label for="email">Email</label>
+                                    <input class="input" type="email" name="email" size="30" id="email" placeholder="your@mail.com">
+                                    <br>
+                                    <label for="login">Login</label>
+                                    <input class="input" type="text" name="login" size="30" id="login" placeholder="Login">
+                                    <br>
+                                    <label for="password">Password</label>
+                                    <input class="input" type="password" name="password" id="password" size="30" placeholder="Password">
+                            </fieldset>
 
-                            <p class="question">
-                                <label for="login">Login</label>
-                                <input class="input" type="text" name="login" size="30" id="login" placeholder="Login">
-                            </p>
-                            <p class="question">
-                                <label for="password">Password</label>
-                                <input class="input" type="password" name="password" id="password" size="30" placeholder="Password">
-                            </p>
-                        </fieldset>
+                            <fieldset>
+                                <legend>User Info</legend>
+                                    <label for="1_name">First Name</label>
+                                    <input class="input" type="text" name="1_name" size="30" id="1_name" placeholder="John">
+                                    <br>  
+                                    <label for="2_name">Second Name</label>
+                                    <input class="input" type="text" name="2_name" size="30"
+                                    id="2_name" placeholder="Doe">
+                                    <br>
+                                    Gender
+                                    <label>
+                                        <input type="checkbox" name="Male" checked>
+                                        Male
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Female">
+                                        Female
+                                    </label>
+                                    <br>   
+                                    <label for="Age">Age</label>
+                                    <input class="input" type="number" name="Age" size="30" 
+                                    id="Age" placeholder="32">
+                                    <br>
+                                    <label for="About_me">About me</label>
+                                    <textarea name="About_me" cols="50" rows="6" id="About_me">
+                                    </textarea>
+                            </fieldset>
 
-                        <fieldset>
-                            <legend>User Info</legend>
-                            <p class="question">   
-                                <label for="1_name">First Name</label>
-                                <input class="input" type="text" name="1_name" size="30" id="1_name" placeholder="John">
-                            </p>
+                            <fieldset>
+                                <legend>Order Info</legend>
+                                    <label for="Product">Product</label>
+                                    <select name="Product" id="Product">
+                                        <option>ipod</option>
+                                        <option>imolodec</option>
+                                        <option>imac</option>
+                                        <option selected="">iPhone</option>
+                                        <option>Android</option>
+                                    </select>
+                                    <br>
 
-                            <p class="question">   
-                                <label for="2_name">Second Name</label>
-                                <input class="input" type="text" name="2_name" size="30"
-                                id="2_name" placeholder="Doe">
-                            </p>
+                                    Front Color
+                                    <label>
+                                        Black
+                                        <input type="radio" name="Front Color" checked>
+                                    </label> 
 
-                            <p class="question">
-                                Gender
-                                <label>
-                                    <input type="checkbox" name="Male" checked>
-                                    Male
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="Female">
-                                    Female
-                                </label>
-                            </p>
+                                    <label>
+                                        Pink
+                                        <input type="radio" name="Front Color">
+                                    </label>
 
-                            <p class="question">   
-                                <label for="Age">Age</label>
-                                <input class="input" type="number" name="Age" size="30" 
-                                id="Age" placeholder="32">
-                            </p>
-
-                            <p class="question">
-                                <label for="About_me">About me</label>
-                                <textarea name="About_me" cols="50" rows="6" id="About_me">
-                                </textarea>
-                            </p>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Order Info</legend>
-
-                            <p class="question">
-                                <label for="Product">Product</label>
-                                <select name="Product" id="Product">
-                                    <option>ipod</option>
-                                    <option>imolodec</option>
-                                    <option>imac</option>
-                                    <option selected="">iPhone</option>
-                                    <option>Android</option>
-                                </select>
-                            </p>
-
-                            <p class="question">
-                                Front Color
-                                <label>
-                                    Black
-                                    <input type="radio" name="Front Color" checked>
-                                </label> 
-
-                                <label>
-                                    Pink
-                                    <input type="radio" name="Front Color">
-                                </label>
-
-                                <label>
-                                    Gold
-                                    <input type="radio" name="Front Color">
-                                </label>
-                            </p>
-
-                            <p class="question">
-                                Back-side color
-                                <label for="color">
-                                    <input type="color" id="color">
-                                </label>
-                            </p>
-
-                            <p class="question">   
-                                <label for="Amount">Amount</label>
-                                <input class="input" type="number" name="Amount" size="30" id="Amount" placeholder="5">
-                            </p>
-
-                            <p>
-                                <label for="date"> Delivery Date</label>
-                                    <input type="date" class="input" name="Date" id="date" size="30">
-                            </p>
-                        </fieldset>
-
+                                    <label>
+                                        Gold
+                                        <input type="radio" name="Front Color">
+                                    </label>
+                                    <br>
+                                    Back-side color
+                                    <label for="color">
+                                        <input type="color" id="color">
+                                    </label>
+                                    <br>   
+                                    <label for="Amount">Amount</label>
+                                    <input class="input" type="number" name="Amount" size="30" id="Amount" placeholder="5">
+                                    <br>
+                                    <label for="date"> Delivery Date</label>
+                                        <input type="date" class="input" name="Date" id="date" size="30">
+                            </fieldset>
+                        </form>
                             <p>
                                 <input type="reset" name="reset" value="Reset">
                                 <input type="submit" name="submit" value="Submit">
