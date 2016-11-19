@@ -29,40 +29,36 @@
                             <fieldset>
                                 <legend>General Info</legend>
                                     <label for="email">Email</label>
-                                    <input class="input" type="email" name="email" size="30" id="email" placeholder="your@mail.com">
+                                    <input class="input" type="email" name="email" size="30" id="email" placeholder="your@mail.com" required="">
                                     <br>
                                     <label for="login">Login</label>
-                                    <input class="input" type="text" name="login" size="30" id="login" placeholder="Login">
+                                    <input class="input" type="text" name="login" size="30" id="login" placeholder="Login" required="">
                                     <br>
                                     <label for="password">Password</label>
-                                    <input class="input" type="password" name="password" id="password" size="30" placeholder="Password">
+                                    <input class="input" type="password" name="password" id="password" size="30" placeholder="Password" required="">
                             </fieldset>
 
                             <fieldset>
                                 <legend>User Info</legend>
                                     <label for="1_name">First Name</label>
-                                    <input class="input" type="text" name="1_name" size="30" id="1_name" placeholder="John">
+                                    <input class="input" type="text" name="1_name" size="30" id="1_name" placeholder="John" required="">
                                     <br>  
                                     <label for="2_name">Second Name</label>
                                     <input class="input" type="text" name="2_name" size="30"
-                                    id="2_name" placeholder="Doe">
+                                    id="2_name" placeholder="Doe" required="">
                                     <br>
-                                    Gender
-                                    <label>
-                                        <input type="checkbox" name="Male" checked>
+                                    <label>Gender</label>
+                                        <input type="checkbox" name="Gender" checked>
                                         Male
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="Female">
+                                        <input type="checkbox" name="Gender">
                                         Female
-                                    </label>
                                     <br>   
                                     <label for="Age">Age</label>
                                     <input class="input" type="number" name="Age" size="30" 
-                                    id="Age" placeholder="32">
+                                    id="Age" placeholder="32" required="">
                                     <br>
                                     <label for="About_me">About me</label>
-                                    <textarea name="About_me" cols="50" rows="6" id="About_me">
+                                    <textarea name="About_me" cols="50" rows="6" id="About_me" required="">
                                     </textarea>
                             </fieldset>
 
@@ -78,39 +74,32 @@
                                     </select>
                                     <br>
 
-                                    Front Color
-                                    <label>
+                                    <label>Front Color</label>
                                         Black
-                                        <input type="radio" name="Front Color" checked>
-                                    </label> 
-
-                                    <label>
+                                        <input type="radio" name="Front_color" checked>
+                                    
                                         Pink
-                                        <input type="radio" name="Front Color">
-                                    </label>
+                                        <input type="radio" name="Front_color">
 
-                                    <label>
                                         Gold
-                                        <input type="radio" name="Front Color">
-                                    </label>
+                                        <input type="radio" name="Front_color">
                                     <br>
-                                    Back-side color
-                                    <label for="color">
+                                    
+                                    <label for="color">Back-side color</label>
                                         <input type="color" id="color">
-                                    </label>
+                                    
                                     <br>   
                                     <label for="Amount">Amount</label>
-                                    <input class="input" type="number" name="Amount" size="30" id="Amount" placeholder="5">
+                                    <input class="input" type="number" name="Amount" size="30" id="Amount" placeholder="5" required="">
                                     <br>
                                     <label for="date"> Delivery Date</label>
-                                        <input type="date" class="input" name="Date" id="date" size="30">
+                                        <input type="date" class="input" name="Date" id="date" size="30" required="">
                             </fieldset>
-                        </form>
                             <p>
                                 <input type="reset" name="reset" value="Reset">
                                 <input type="submit" name="submit" value="Submit">
                             </p>
-
+                        </form>
                     </div>
                 </div>
             </div>
